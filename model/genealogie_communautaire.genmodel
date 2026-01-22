@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/genealogie_communautaire/src-gen" creationIcons="false"
+    editDirectory="/genealogie_communautaire.edit/src-gen" editorDirectory="/genealogie_communautaire.editor/src-gen"
+    modelPluginID="genealogie_communautaire" modelName="Genealogie_communautaire"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>genealogie_communautaire.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Genealogie_communautaire" disposableProviderFactory="true"
+      ecorePackage="genealogie_communautaire.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="genealogie_communautaire.ecore#//statusType">
+      <genEnumLiterals ecoreEnumLiteral="genealogie_communautaire.ecore#//statusType/PROPOSED"/>
+      <genEnumLiterals ecoreEnumLiteral="genealogie_communautaire.ecore#//statusType/ACCEPTED"/>
+      <genEnumLiterals ecoreEnumLiteral="genealogie_communautaire.ecore#//statusType/REJECTED"/>
+    </genEnums>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//AbstractRecord">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//AbstractRecord/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//AbstractRecord/createdAt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//AbstractRecord/updatedAt"/>
+    </genClasses>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//User/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//User/possedePlusieursArbres"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//User/email"/>
+    </genClasses>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//Tree">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Tree/title"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Tree/estLié"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Tree/contientPersonnesLocales"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Tree/contientLiensFamiliaux"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Tree/description"/>
+    </genClasses>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//GlobalPerson">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//GlobalPerson/canonicalName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//GlobalPerson/bestDisplayName"/>
+    </genClasses>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//PersonNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//PersonNode/estEnRelationAvec"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//PersonNode/contientAssertion"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//PersonNode/enLienAvecLeReferentiel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//PersonNode/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//PersonNode/privacy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//PersonNode/computedLabel"/>
+    </genClasses>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//Relationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Relationship/aUneRelation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Relationship/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Relationship/startDate"/>
+    </genClasses>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//Assertion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Assertion/contientLiensDePreuves"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Assertion/field"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Assertion/valueText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Assertion/valueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Assertion/confidence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Assertion/status"/>
+    </genClasses>
+    <genClasses ecoreClass="genealogie_communautaire.ecore#//EvidenceLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//EvidenceLink/note"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//EvidenceLink/extract"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
