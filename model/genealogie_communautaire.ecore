@@ -35,7 +35,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="PersonNode">
     <eStructuralFeatures xsi:type="ecore:EReference" name="estEnRelationAvec" lowerBound="1"
         eType="#//Relationship"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="contientAssertion" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contientAssertions" upperBound="-1"
         eType="#//Assertion" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="enLienAvecLeReferentiel"
         eType="#//GlobalPerson"/>

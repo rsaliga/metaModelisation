@@ -39,7 +39,7 @@
     </genClasses>
     <genClasses ecoreClass="genealogie_communautaire.ecore#//PersonNode">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//PersonNode/estEnRelationAvec"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//PersonNode/contientAssertion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//PersonNode/contientAssertions"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//PersonNode/enLienAvecLeReferentiel"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//PersonNode/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//PersonNode/privacy"/>
