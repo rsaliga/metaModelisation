@@ -5,16 +5,5 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:genealogie_communautaire="http://fr.ubo.mde.genealogie_communautaire"
     xsi:schemaLocation="http://fr.ubo.mde.genealogie_communautaire genealogie_communautaire.ecore"
-    createdAt="2026-01-30T10:15:00"
-    updatedAt="2026-01-30T10:15:00"
     name="Rodney SALIGA"
-    email="rodsaliga@yahoo.fr">
-  <possedePlusieursArbres>
-    <contientPersonnesLocales>
-      <contientAssertions>
-        <contientLiensDePreuves/>
-      </contientAssertions>
-    </contientPersonnesLocales>
-    <contientLiensFamiliaux/>
-  </possedePlusieursArbres>
-</genealogie_communautaire:User>
+    email="rodsaliga@yahoo.fr"/>

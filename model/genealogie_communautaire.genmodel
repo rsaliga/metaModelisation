@@ -28,7 +28,7 @@
     </genClasses>
     <genClasses ecoreClass="genealogie_communautaire.ecore#//Tree">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Tree/title"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Tree/estLié"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Tree/estLié"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Tree/contientPersonnesLocales"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference genealogie_communautaire.ecore#//Tree/contientLiensFamiliaux"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute genealogie_communautaire.ecore#//Tree/description"/>

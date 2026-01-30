@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genealogie_communautaire:Tree
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genealogie_communautaire="http://fr.ubo.mde.genealogie_communautaire"
+    xsi:schemaLocation="http://fr.ubo.mde.genealogie_communautaire genealogie_communautaire.ecore"
+    title="SALIGA"
+    description="Famille SALIGA">
+  <estLié/>
+</genealogie_communautaire:Tree>
